@@ -29,6 +29,7 @@
       color: var(--white);
       padding: 40px 20px;
       text-align: center;
+      position: relative;
     }
 
     .header h1 {
@@ -40,6 +41,26 @@
       font-size: 1.1rem;
       max-width: 700px;
       margin: auto;
+    }
+
+    .talk-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: var(--white);
+      color: var(--blue);
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: background 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .talk-button:hover {
+      background-color: #e6edff;
     }
 
     .section {
@@ -61,6 +82,11 @@
       line-height: 1.6;
     }
 
+    .section ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+
     .info-box {
       background-color: var(--light-gray);
       padding: 20px;
@@ -80,7 +106,8 @@
 <body>
 
   <div class="header">
-    <h1>Customer Service</h1>
+    <a href="tel: 1-866-240-5323" ><button class="talk-button">📞 Talk to Us:1-866-240-5323</button></a>
+    <h1>Coinbase Customer Service</h1>
     <p>We believe in delivering outstanding support, built on trust, responsiveness, and clarity.</p>
   </div>
 
